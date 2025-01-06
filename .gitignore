@@ -1,0 +1,21 @@
+# Ignore object files
+*.o
+
+# Ignore executable files
+*.exe
+*.out
+
+# Ignore all files in the build folder (if you have one)
+build/
+
+# Ignore Visual Studio-specific files and folders (if applicable)
+.vscode/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.user
+
+# Ignore temporary system files
+.DS_Store
+Thumbs.db
+
