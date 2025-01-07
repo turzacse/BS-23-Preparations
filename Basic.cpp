@@ -1,13 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+int binarySearch(int n) {
+        int low = 1, high = n;
+
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (isBadVersion(mid)) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return low;
+}
 
 int main() {
-    string s = "Hello";
 
-    // Range-based for loop
-    for (char c : s) {
-        cout << c << " ";
-    }
-
-    return 0;
 }
